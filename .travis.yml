@@ -7,12 +7,7 @@ before_install:
 - . /tmp/BuildUtils/travisci/setup.sh
 install: true
 script:
-- mvn clean verify
-deploy:
-  provider: script
-  script: mvn deploy
-  on:
-    branch: master
+- mavenBuild.sh
 cache:
   directories:
   - "$HOME/.m2/repository"

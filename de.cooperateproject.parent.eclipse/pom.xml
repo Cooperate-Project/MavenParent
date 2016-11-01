@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>de.cooperateproject</groupId>
+		<artifactId>de.cooperateproject.parent</artifactId>
+		<version>1.0.1</version>
+	</parent>
+	<artifactId>de.cooperateproject.parent.eclipse</artifactId>
+	<packaging>pom</packaging>
+	<name>Cooperate Project Global Eclipse Parent</name>
+
+	<properties>
+		<bintray.deploy.serverId>cooperate-bintray</bintray.deploy.serverId>
+		<bintray.deploy.subject>cooperate-project</bintray.deploy.subject>
+		<bintray.deploy.package>updatesite</bintray.deploy.package>
+		<bintray.deploy.snapshotVersionReplacement>latest</bintray.deploy.snapshotVersionReplacement>
+		<bintray.deploy.createVersionIfMissing>true</bintray.deploy.createVersionIfMissing>
+		<bintray.deploy.replaceIfExisting>false</bintray.deploy.replaceIfExisting>
+		<bintray.deploy.replaceIfSnapshot>true</bintray.deploy.replaceIfSnapshot>
+	</properties>
+
+</project>

@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.cooperateproject</groupId>
 	<artifactId>de.cooperateproject.parent</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<packaging>pom</packaging>
 	<name>Cooperate Project Global Parent</name>
 
@@ -15,6 +15,36 @@
 	</modules>
 	
 	<profiles>
+	
+		<profile>
+			<id>cooperate-maven-repositories</id>
+			<activation>
+				<file>
+					<missing>target/someNeverExistingFileToActivateTheProfileByDefault</missing>
+				</file>
+			</activation>
+			<repositories>
+				<repository>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+					<id>bintray-cooperate-project-MavenPlugins</id>
+					<name>bintray</name>
+					<url>http://dl.bintray.com/cooperate-project/MavenPlugins</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+					<id>bintray-cooperate-project-MavenPlugins</id>
+					<name>bintray-plugins</name>
+					<url>http://dl.bintray.com/cooperate-project/MavenPlugins</url>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	
 		<profile>
 			<id>specific-deployment</id>
 			<distributionManagement>
@@ -101,19 +131,6 @@
 			</properties>
 		</profile>
 	</profiles>
-	
-	<distributionManagement>
-		<repository>
-			<id>cooperate-packagedrone</id>
-			<name>Release Repository</name>
-			<url>https://mammutbaum36.fzi.de/maven/cooperate</url>
-		</repository>
-		<snapshotRepository>
-			<id>cooperate-packagedrone</id>
-			<name>Snapshot Repository</name>
-			<url>https://mammutbaum36.fzi.de/maven/cooperate-dev</url>
-		</snapshotRepository>
-	</distributionManagement>
 
 	<build>
 		<plugins>

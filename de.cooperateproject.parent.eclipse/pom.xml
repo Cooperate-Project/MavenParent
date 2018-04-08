@@ -4,11 +4,11 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>de.cooperateproject</groupId>
-		<artifactId>de.cooperateproject.parent</artifactId>
+		<groupId>de.cooperate-project</groupId>
+		<artifactId>de.cooperate-project.parent</artifactId>
 		<version>1.1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>de.cooperateproject.parent.eclipse</artifactId>
+	<artifactId>de.cooperate-project.parent.eclipse</artifactId>
 	<packaging>pom</packaging>
 	<name>Cooperate Project Global Eclipse Parent</name>
 
